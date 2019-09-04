@@ -1,0 +1,8 @@
+body{
+    display: grid;
+    grid-template-areas: 'nav nav nav nav' 'header header header header' 'secction section section section' 'footer footer footer footer';
+    grid-template-columns: 25vw 25vw 25vw 25vw; /* O ideal é que se some 100 contando todos, pois assim não haverá scroll na horizontal*/
+    grid-template-rows: 8vh 25vh 60vh 10vh; /* Não é necessário somar 100 pois já é comum usar scroll para descer uma tela*/
+    margin: 0;
+
+}
