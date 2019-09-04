@@ -27,6 +27,10 @@ body{
     grid-template-rows: 8vh 40vh 60vh 10vh; /* Não é necessário somar 100 pois já é comum usar scroll para descer uma tela*/
     margin: 0;
 }
+body::-webkit-scrollbar{
+    width: 0px; /* Remove scrollbar space*/
+    /* background: transparent; Optional: just make scrollbar invisible */
+}
 footer{
     grid-area: footer;
 }
