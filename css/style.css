@@ -1,26 +1,39 @@
 aside{
+    background-color: #282a250f;
     grid-area: aside;
+}
+aside p{
+    font-family: 'Montserrat', sans-serif;
+}
+aside h2{
+    text-align: center;
+}
+aside h2, aside p{
+    color: white;
+    padding: 0 15px;
+}
+aside ul{
+    list-style-image: url("../images/nuvem-icon.png");
+}
+aside ul li{
+    color: white;
 }
 body{
     display: grid;
+    cursor: url("../images/kunai.png"), default;
     font-family: 'Permanent Marker', cursive;
-    grid-template-areas: 'navbar navbar navbar navbar' 'header header header header' 'secction section section section' 'footer footer footer footer';
+    grid-template-areas: 'navbar navbar navbar navbar' 'header header header header' 'aside aside aside aside''section section section section' 'footer footer footer footer';
     grid-template-columns: 25vw 25vw 25vw 25vw; /* O ideal é que se some 100 contando todos, pois assim não haverá scroll na horizontal*/
-    grid-template-rows: 8vh 25vh 60vh 10vh; /* Não é necessário somar 100 pois já é comum usar scroll para descer uma tela*/
+    grid-template-rows: 8vh 40vh 60vh 10vh; /* Não é necessário somar 100 pois já é comum usar scroll para descer uma tela*/
     margin: 0;
 }
 footer{
     grid-area: footer;
 }
 header{
+    background-image: url("../images/akatsuki.jpg");
+    background-size: cover;
     grid-area: header;
-}
-nav a{
-    color: whitesmoke;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #bb2127;
 }
 nav{
     align-items: center;
@@ -30,9 +43,18 @@ nav{
     grid-area: navbar;
     font-family: 'Permanent Marker', cursive;
 }
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #bb2127;
+    cursor: url("../images/kunai.png"), default;
+}
 nav > img{ /*Restringe à apenas para os filhos da nav, e não para os demais*/
     width: 45px;
 }
 section{
     grid-area: section;
 }
+
