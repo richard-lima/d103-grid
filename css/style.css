@@ -7,6 +7,8 @@ aside p{
 }
 aside h2{
     text-align: center;
+    -webkit-text-stroke-width: 0 5px;
+    -webkit-text-stroke-color: white;
 }
 aside h2, aside p{
     color: white;
@@ -58,7 +60,20 @@ nav a:hover{
 nav > img{ /*Restringe à apenas para os filhos da nav, e não para os demais*/
     width: 45px;
 }
+section div{
+    display: flex;
+    justify-content: center; /* centraliza*/    
+}
 section{
     grid-area: section;
 }
-
+section h2{
+    text-align: center;
+    margin: 0;
+}
+section input:focus{
+    background-color: lightgrey ;
+}
+section input::placeholder{
+    color: #bb2127;
+}
