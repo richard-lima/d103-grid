@@ -1,8 +1,38 @@
+aside{
+    grid-area: aside;
+}
 body{
     display: grid;
-    grid-template-areas: 'nav nav nav nav' 'header header header header' 'secction section section section' 'footer footer footer footer';
+    font-family: 'Permanent Marker', cursive;
+    grid-template-areas: 'navbar navbar navbar navbar' 'header header header header' 'secction section section section' 'footer footer footer footer';
     grid-template-columns: 25vw 25vw 25vw 25vw; /* O ideal é que se some 100 contando todos, pois assim não haverá scroll na horizontal*/
     grid-template-rows: 8vh 25vh 60vh 10vh; /* Não é necessário somar 100 pois já é comum usar scroll para descer uma tela*/
     margin: 0;
-
+}
+footer{
+    grid-area: footer;
+}
+header{
+    grid-area: header;
+}
+nav a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #bb2127;
+}
+nav{
+    align-items: center;
+    background-color: #282a25;
+    display: flex;
+    justify-content: space-around;
+    grid-area: navbar;
+    font-family: 'Permanent Marker', cursive;
+}
+nav > img{ /*Restringe à apenas para os filhos da nav, e não para os demais*/
+    width: 45px;
+}
+section{
+    grid-area: section;
 }
